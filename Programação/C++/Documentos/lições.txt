@@ -1,0 +1,13 @@
+Dados uma distancia em km, o preço da gasolina	em reais deve-se mostrar quantos litros de gasolina um carro irá consumir e quanto será gasto em reais. Considere que o carro faz 12km/l de gasolina
+
+Entrada
+preço
+distancia em km
+
+saidas
+litros de gasolina
+quantos será gasto em reais
+
+(consumo)km(distancia / 12litro =
+(total gasto) preço x km(distancia) = 
+

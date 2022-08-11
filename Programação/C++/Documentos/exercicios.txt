@@ -1,0 +1,33 @@
+Escreva dois numeros e verifica se o segundo é maior que o primeiro - ok
+
+Escreva dois numeros e verifica qual dos dois é o maior - ok
+
+Escreva três numeros e verifica qual dos três é o maior - ok
+
+Calcular o imc do homem e classificar o nivel de obesidade - ok
+
+Dados uma distancia em KM, o preço da gasolina em reais deve mostrar quantos litros de gasolina um carro irá consumir e quanto será gasto em reais. Considere que o carro faz 12km/l de gasolina - ok
+
+Dado um valor inteiro positivo que represente um montante de segundos, converter o montante para o formato hh:mm:ss - ok
+
+Um numero é par? - ok
+
+Um numero é impar? - ok
+
+Um numero é positivo?
+
+Um numero é par e positivo?
+
+Um numero não zero?
+
+Um numero é positivo e multiplo de 3?
+
+Um numero A qualquer é o maior entre os numeros A, B e C?
+
+Um numero B qualquer é o menor entre os numeros A, B e C?
+
+Um numero C quaquer é divisivel por quatro ou o menor entre os numeros A, B e C?
+
+Escreva,  um prograna  para calcular a  média  de  N números
+
+Faça  um  programa  para  ler 5  números  e  mostrar  o resultado  da  soma  desses  números

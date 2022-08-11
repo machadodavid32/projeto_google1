@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+	
+	char operador;
+	float peso, altura, resultado;
+
+	printf("Informe o peso em kg : ");
+	scanf("%c",&peso);	
+	printf("Informe a altura em mt : ");
+	scanf("%f",&altura);
+
+
+	
+	if (resultado == peso/altura*altura){
+		resultado = numero1+numero2;
+		printf("\n%f + %f = %f", numero1, numero2, resultado);
+		
+	}
+	else if (operador == '-'){
+		resultado = numero1-numero2;
+		printf("\n%f - %f = %f", numero1, numero2, resultado);}
+		
+		else if(operador == '*'){
+		resultado = numero1*numero2;
+		printf("\n%f * %f = %f", numero1, numero2, resultado);}
+		
+		else if(operador == '/'){
+		resultado = numero1/numero2;
+		printf("\n%f / %f = %f", numero1, numero2, resultado);}
+		else{
+			printf("operador invalido");
+		}
+		
+}

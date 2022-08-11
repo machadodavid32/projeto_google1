@@ -1,0 +1,141 @@
+git e github
+comandos
+
+git init -> inicia o gii em determinado projeto
+
+git status -> mostra o estatus do projeto
+
+.gitignore -> faz o git ignorar certos arquivos desnecessários. Você cria um arquivo com...
+.. o nome .gitignore. Após isso é só colocar os nomes de arquivos ou diretórios dentro...
+... deste arquivo .gitignore. No caso de diretórios, colocar um duplo asterisco ** antes...
+...do nome do diretório a ser ignorado. Caso eu queira ignorar todos os arquivos que tenham...
+... o mesmo nome é só colocar um asterisco * mais o nome da extensão do arquivo. exemplo: *.sqlite3, *.mp4, *.doc, etc...
+
+git config user.name "Nome da pessoa" -> Este comando serve para nomear quem está mexendo...
+...no projeto. Assim que criarmos o projeto(a cada repositório) é necessário informar o nome através deste.
+
+git config user.email "email da pessoa" -> Vai cadastrar um email do responsavel. Igual o comando de cadastrar o nome,...
+...essa configuração é local. Existe uma de forma global. Segue abaixo:
+
+git config --global user.email "email @ pessoa
+
+git add "nome do arquivo" -> adiciona um arquivo para ser monitorado. Caso um arquivo seja excluído, também é necessário o..git add para atualizar seu estado
+
+git add . -> adiciona todos os arquivos ou arquivos modificados ao projeto (tudo de uma vez)
+
+git commit -m "informar andamento do projeto ou informações importantes" Exemplo. git commit -m "Meu primeiro commit"
+obs sobre commit -> após concluir um commit, vai aparecer como resposta um codigo, [master faec61c], esse codigo...
+.. é o identificador deste commit
+
+git commit --amend -m "mensagem" -> Aqui corrige erros de commit anteriores, por exemplo, erros de português. Também ...
+..serve para, caso vc esqueça de atualizar ou criar algum arquivo. Neste caso, ele adiciona como se fosse o ultimo...ele
+..não cria outro commit
+
+
+
+git log -> comando que mostra todo os historicos. É a consultado aos commits. Após consulta aos commits, você pode...
+..pesquisar um commit, por exemplo, através de uma palavra. O comando é / palavra
+
+OUTROS COMANDOS DO GIT LOG
+git log -2 -> mostra os dois ultimos logs
+git log -3 -> mostra os três ultimos logs
+git log --oneline -> Mostra todas as commit em uma linha
+git log --online -1 -> mostra em uma linha o ultimo commit
+git log --before="2020-05-10"  -> mostra o log em uma determinada data
+git log --after="2020-05-10" -> Motra os commits após esta data
+git log --after="2020-05-10" -2  -> mostra os dois ultimos commits após esta data
+git log --author="nomedoautor"  -> busca pelo nome da pessoa que foi responsável pelas alterações
+
+git chekout + numero do commit -> vai até tal commit, ou seja, retorna o projeto da onde parou naquele commit...
+...ele volta no tempo ...
+git chekout master -> Vai até a ultima modificação (ultimo commit), ou seja, retorna o projeto da onde parou
+
+git mv nomedoarquivo novonomedoarquivo -> este comando muda o nome de um arquivo
+OBS: Ao renomear pelo terminal, não precisa fazer um novo git add. Se for renomear pelo visual studio ou outro, ai precisa.
+
+git rm nomedoarquivo -> apaga um arquivo. Da pra deletar pelo studio, porém, vai ter que fazer o processo de git add..
+
+git git mv ou rm apagam diretórios, além de arquivos
+
+git diff --staged -> comando para verificar se existe alguma alteração sem ser commitada
+
+git diff numerodocommit -> Ele mostra a diferença entre o agora e um commit anterior. Mostra as alterações que houve.
+
+git diff numerodeumcommit..numerodeoutrocommit  ->desta forma vc compara as alterações do projeto entre um commit e outro.
+
+
+git restore --staged nomedoarquivo -> Ele retira o arquivo do staged (modo antes de add)
+
+git checkout nomedopromaga  -> Caso vc erre em alterar um arquivo, esse comando elimina a ultima alteração.
+
+git reset HEAD --hard  -> Este comando serve para, caso vc tenha alterado varias arquivos de uma vez e gostaria de voltar...(antes do commit)
+
+git reset HEAD^ --hard  -> Ele desfaz as ultimas alterações após feito o commit.
+
+git branch - verifica se há branch(ramificação) no projeto
+
+git branch nomedoarquivo  -> Cria um branch(ramo) no projeto.
+
+git checkout nomedanovabranch  -> para mudar do ramo master (o ramo principal) para a nova branch
+
+git branch -d nomedobranch  -> exclui o branch, mas vai pedir confirmação. É o mesmo comando, mas com D maiusculo
+
+git merge nomedobranch -> Ele junta um ramo com o ramo master. Você pode eliminar o antigo ramo pois as informações dele...
+...já foram adicionadas no branch master usando o git branch -d nomedobranch
+
+git checkout -b nomedobranch -> Este é um outro modo de criar um branch. Mas aqui, além de criar, vc ja entra.
+
+git rebase nomedobranch  -> faz a mesma coisa que o branch
+
+git clone caminhodapastaAserClonada exemplo: git clone /home/david/Documentos/secao04-bare
+
+ls -la -> mostra arquivos ocultos
+
+touch nome_do_novo_arquivo -> Cria um novo arquivo
+
+git push -> Encaminha todas as alterações de um repositório clone para um master. Mas ele não faz sozinho.
+
+git rebase -> Esse comando é executado após o git push para terminar de migrar as alterações do projeto original ao clone.
+
+git pull -> Ele faz as duas coisas que os comandos acima fazem, porém, ao mesmo tempo. Após este comando, dê ctrl-a pra...
+...salve e ctrl-x pra sair.
+
+git fetch -> importa coisas do projeto original para o clone
+
+git init --bare -> Cria um repositório bare, que serve como centralizador em um projeto
+
+cd nomedoiretorio -> Comando serve para ir para o diretorio desejado.
+
+git tag Nomedatag  -> Vai criar uma tag
+
+git push origin nomedatag -> vai repassar a tag para outros repositórios do projeto
+
+git switch -c nome+nomedartag -> Efetua um novo branch a tag para eventuais correções
+
+
+GITHUB
+
+git remote -v  -> Mostra se existe repositórios no github
+
+git remote add origin https:/ ...... -> serve para registrar um repositório remoto no nosso projeto. Assim podemos alterar
+git push -u origin master -> encaminha as alterações do git para o github
+
+git config credential.helper store -> é um comando que muda a configuração de um projeto apenas para não ficar pedindo usuario e senha ao atualizar o projeto junto ao github
+
+
+******
+git hub acesso token: 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
+******
+
+git clone https://github.com/machadodavid32/geek-git1.git -> git clone mais endereço serve para clonar o projeto do github
+
+cd mais o nome do repositorio no terminal -> faz vc entrar no terminal do repositório.
+
+git pull origin master -> Serve para atualizar repositórios de outros usuarios
+
+git checkout -- .  -> Comando para que os arquivos voltem ao estado original (antes do commit).
+
+git checkout -- +nome do arquivo -> Faz apenas o arquivo citado voltar ao estado original((antes do commit)).
+
+git checkout HEAD -> Faz voltar os arquivos ao estagio anterior mesmo após o commit
+
